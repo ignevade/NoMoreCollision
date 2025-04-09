@@ -1,0 +1,25 @@
+name: NoMoreCollision
+version: 1.0.0
+main: me.evade.noMoreCollision.NoMoreCollision
+api-version: '1.21'
+description: A plugin to enable or disable player collision
+author: Evade
+commands:
+  collision:
+    description: Toggle player collision
+    usage: /<command> [self|global|status|help]
+    permission: nomorecollision.toggle
+    permission-message: You don't have permission to use this command.
+permissions:
+  nomorecollision.toggle:
+    description: Allows players to toggle collision with GUI
+    default: op
+  nomorecollision.self:
+    description: Allows players to toggle their own collision
+    default: op
+  nomorecollision.global:
+    description: Allows players to toggle global collision
+    default: op
+  nomorecollision.status:
+    description: Allows players to check collision status
+    default: true
